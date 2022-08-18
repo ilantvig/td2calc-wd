@@ -45,7 +45,7 @@ export default {
           v-for="locale in availableLocales" 
           :key="'locale-'+locale"
           :value="locale">
-          {{ locale }} {{ languages[locale] }}
+          {{ languages[locale] }}
         </option>
       </select>
     </div>
