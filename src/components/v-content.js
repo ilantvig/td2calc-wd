@@ -540,35 +540,9 @@ export default {
                 </div>
             </div>
 
-
-<!-- ///////////////////////////////////////////////////////// -->
-
-            <!--
-
-            <div class="stick stick-bottom">
-                Total gear upgrade costs
-                <hr class="td2-hr"/>
-
-                <div v-for="(gearMatName,matIndex) in gearMaterialNames"
-                :key="matIndex">
-                {{gearMatName}}: {{totalGearUpgradeCoast[matIndex]}}
-                </div>
-            </div>
-                
-            -->
-           
-            <br />
-
-            <div style="margin: 15px; margin-bottom: 100%; border: 1px solid #ff6d10;">
+            <div style="margin: 15px; margin-bottom: 25%; border: 1px solid #ff6d10;">
             </div>
 
-            
-
-            <!--
-            <p v-for="index in 8" class="box-gray">
-               2<sup>{{--index}}</sup> = {{BigInt(2**index)}}
-            </p>
-            -->
         </div>
     `,
 };
