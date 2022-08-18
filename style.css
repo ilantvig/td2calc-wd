@@ -1,0 +1,403 @@
+/* 
+  background patterns
+    https://heropatterns.com/ 
+
+*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-color: hsl(0, 0%, 20%);
+    --main-bg-color: hsl(0, 0%, 100%);
+    --main-bg-color-hover: hsl(40, 100%, 80%);
+    --main-bg-color-active: hsl(20, 100%, 80%);
+    --main-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23eeeeee' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --main-bg-size: 10px;
+    --main-bg-attachment: fixed;
+  }
+  
+  .box-lime {
+    /*  background-color: white;
+    width: 600px;*/
+    margin: 15px;
+    border: 2px solid #85ff85;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #85ff8585;
+  }
+
+  .box-gray {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #cccccc;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #aaaaaacc;
+  }
+
+  /* Custom Scrollbar, begin */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 2ex;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Custom Scrollbar, end */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: hsl(0, 0%, 90%);
+    --main-bg-color: hsl(0, 0%, 5%);
+    --main-bg-color-hover: hsl(40, 100%, 20%);
+    --main-bg-color-active: hsl(20, 100%, 20%);
+    --main-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23222222' fill-opacity='0.6' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --main-bg-size: 10px;
+    --main-bg-attachment: fixed;
+  }
+  
+  .box-lime {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #006600;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #006600cc;
+  }
+
+  .box-gray {
+    /*  background-color: white;
+width: 600px;*/
+    margin: 15px;
+    border: 2px solid #666666;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 0px #666666cc;
+  }
+
+  /* Custom Scrollbar, begin */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 2ex;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+
+  /* Custom Scrollbar, end */
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */
+
+body {
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
+  background-attachment: var(--main-bg-attachment);
+}
+
+
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  */
+
+
+input[type='checkbox'] {
+  accent-color: hsl(23, 100%, 53%);
+  position: relative;
+}
+
+input[type='checkbox'].unchecked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  outline: 1px solid #ff6d10;
+  outline-offset: -1px;
+  border-radius: 2px;
+}
+input[type='checkbox'].unchecked.disabled::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  outline: 1px solid #848484;
+  outline-offset: -1px;
+  border-radius: 2px;
+}
+
+
+button + button {
+  margin-left: 1.5ex;
+}
+
+.v-main-wrapper {
+  /* max-width: 900px; */
+  margin: 0 auto;
+}
+.v-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Toggle Switch, begin */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.4em;
+  height: 1.2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.8em;
+  width: 1.5em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.5em);
+  -ms-transform: translateX(1.5em);
+  transform: translateX(1.5em);
+}
+
+input + input {
+    margin-left: 1ex;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Toggle Switch, end */
+
+button {
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+
+.td2-button {
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
+  background-attachment: var(--main-bg-attachment);
+  
+  padding: 2px 4px;
+  /* width: 140px; */
+  border: 1px solid hsl(23, 100%, 53%);
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.td2-button:hover {
+  background-color: var(--main-bg-color-hover);
+}
+
+.td2-button:active {
+  background: var(--main-bg-color-active);
+  /* color: rgb(255, 255, 255); */
+}
+
+.td2-input {
+  border: 1px solid #ff6d10;
+  
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
+  background-attachment: var(--main-bg-attachment);
+}
+
+.td2-input:focus {
+  /* text-align: center; */
+  outline: 1px solid #ff6d10;
+  border-radius: 2px;
+  box-shadow: 0px 0px 14px 0px #ff6d10cc;
+}
+
+.td2-input-data:focus {
+  text-align: center;
+}
+
+.td2-input-number {
+  width: 6em;
+  text-align: end;
+}
+
+.locale-container {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 15px;
+}
+
+.td2-hr {
+  height: 1px;
+  border-width: 0;
+  background-color: #ff6d10;
+  box-shadow: 0px 0px 10px 1px #ff6d10cc;
+}
+
+.box-orange {
+  /*  background-color: white;
+width: 600px;*/
+  margin: 15px;
+  border: 1px solid #ff6d10;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px #ff6d10cc;
+}
+
+
+.stick {
+  z-index: 1;
+
+  position: -webkit-sticky; /* Safari */ 
+  position: sticky;
+
+  margin: 15px;
+  border: 1px solid #ff6d10;
+  box-shadow: 0px 0px 10px 0px #ff6d10cc;
+
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-image);
+  background-size: var(--main-bg-size);
+  background-attachment: var(--main-bg-attachment);
+}
+
+.stick-top {
+  top: 0px;
+
+  border-radius: 0 0 15px 15px;
+  padding: 0px;
+}
+
+.stick-bottom {
+  bottom: 1px;
+
+  border-radius: 15px 15px 0 0;
+  padding: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+  /* border: 3px solid green; */
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* text-align: center; */
+}
+
+.flex-item {
+  /* background-color: rgb(100, 100, 100); */
+  padding: 10px;
+  flex: auto;
+}
+
+
+.model-form {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ff6d10;
+  padding: 5px 5px;
+  /* margin-bottom: 20px; */
+  /* background-color: #76db95; */
+  /* height: 30px; */
+  /* line-height: 30px; */
+  /* font-size: 18px; */
+  /* color: #212121; */
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
