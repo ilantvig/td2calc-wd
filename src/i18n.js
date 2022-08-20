@@ -43,7 +43,7 @@ const messages = {
     WD: "Урон оружия (УО)",
     WD_type: "Урон выбр. типа оружия",
     WD_other: "Урон оружия (прочее)",
-    TWD_increaser: "Увеличение УО",
+    TWD_increaser: "Увеличение общего УО",
     TWD_amplifier: "Увеличение всего УО",
     D_to_health: "Урон здоровью",
     D_to_armor: "Урон броне",
